@@ -10,11 +10,11 @@ const vehiclesBtn = document.getElementById("vehicles");
 const root = document.getElementById("root");
 
 const fetchAndRender = (query, myClass) => {
-  fetch(`http://swapi.dev/api/${query}`)
-    .then((response) => response.json(response.body))
+  fetch(`https://swapi.dev/api/${query}`)
+    .then((response) => response.json())
     .then((data) => data.results.map((el) => new myClass(el).createLine()))
     .then((names) => (root.innerHTML = names.join("")))
-    .catch((error) => console.log(error));
+    .catch((error) => alert ("Something went wrong. Please try later"));
 };
 
 peopleBtn.addEventListener("click", () => fetchAndRender("people", Persone));
