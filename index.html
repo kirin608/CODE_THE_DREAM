@@ -1,9 +1,35 @@
 <!DOCTYPE html>
-<head>
-    <title>Star Wars</title>
-    <script src='index.js' defer></script>
-</head>
-<body>
-    <h1>HELLO WORLD!!</h1>
-    <un id='root'></un>  
-</body>
+<html>
+  <head>
+    <title>The Star Wars API</title>
+    <script src="index.js" defer></script>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <h1>--STAR WARS--</h1>
+      <h3>Made by Andrii Shapiro</h3>
+      <h5>All the Star wars data you ever wanted!</h5>
+      <h5>Choose data from options below</h5>
+      <div>
+        <table>
+          <tr>
+            <td><button class="btn" id="people">People</button></td>
+            <td><button class="btn" id="films">Films</button></td>
+            <td><button class="btn" id="planets">Planets</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" id="species">Species</button></td>
+            <td><button class="btn" id="starships">Starships</button></td>
+            <td><button class="btn" id="vehicles">Vehicles</button></td>
+          </tr>
+        </table>
+      </div>
+      <ul id="root"></ul>
+    </main>
+    <br />
+    <footer>
+      <p>Designed by Andrii Shapiro for CODE THE DREAM asignment</p>
+    </footer>
+  </body>
+</html>
